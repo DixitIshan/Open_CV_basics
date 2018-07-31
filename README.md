@@ -1,9 +1,6 @@
 # Open_CV_Practice
-<<<<<<< HEAD
 
 for Linux setup you need to: 
-pip install numpy, pip install matplotlib, apt-get install python3-OpenCV
-=======
-# for Linux setup you need to:
-# pip install numpy, pip install matplotlib, apt-get install python3-OpenCV
->>>>>>> master
+1) pip install numpy
+2) pip install matplotlib and
+3) apt-get install python3-OpenCV
