@@ -1,0 +1,28 @@
+#IMPORTING NECESSARY DEPENDENCIES
+import numpy as np
+import cv2
+
+#STARTING THE VIDEO STREAM FROM THE WEBCAM
+cap = cv2.VideoCapture(0)
+
+while True:
+	#CAPTURING THE FRAME AND READING IT
+	frame, ret = cap.read()
+
+	#CONVERING THE CAPTURED FRAME TO GRAYSCALE
+	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+	#OUTPUT THE ORIGINALLY CAPTURED FRAME
+	cv2.imshow('frame', frame)
+	#OUTPUT THE GRAY FRAME
+	cv2.imshow('gray_frame', gray)
+
+	#PRESSING 'Q' BUTTON ON KEYBOARD TO QUIT OUT FROM THE WINDOWS
+	if cv2.waitKey(20) and 0xFF == ord('q'):
+		break
+
+
+#RELEASING ALL THE CAPTURED VIDEO STREAM
+cap.release()
+#CLOSING ALL THE OPENED WINDOWS FROM BACKGROUND
+cv2.destroyAllWindows()
