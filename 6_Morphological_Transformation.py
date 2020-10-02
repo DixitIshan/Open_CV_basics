@@ -14,8 +14,8 @@ while True:
 
 	#MAXIMUM AND MINIMUM OF THE COLOR VALUES
 	# WE NEED TO CHANGE THE VALUE OF THE FOLLOWING IN ORDER TO GET THE DESIRED RESULTS
-	color_value_1 = np.arrays([0, 0, 0])
-	color_value_2 = np.arrays([255, 255, 255])
+	color_value_1 = np.array([0, 0, 0])
+	color_value_2 = np.array([255, 255, 255])
 
 	# MASK IS THE RANGE BETWEEN color_value_1 AND color_value_2. SO BASICALLY MASK IS CURRENTLY IDENTICAL TO FRAME
 	mask = cv2.inRange(hsv, color_value_1, color_value_2)
